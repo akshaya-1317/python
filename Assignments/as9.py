@@ -13,3 +13,22 @@ def pattern1(n):
 
 rows = int(input("Enter number of rows: "))
 pattern1(rows)
+
+
+
+
+# 8. Print following pattern. Hint: Use nested loop.
+# 1
+# 1 2
+# 1 2 3
+# 1 2 3 4
+# 1 2 3 4 5
+
+
+def pattern(n):
+    if n>0 :
+        pattern(n+1)
+        print('n' * n)
+
+num = int(input("Enter number: "))
+pattern(num)
